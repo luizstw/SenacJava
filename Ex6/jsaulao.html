@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex6</title>
+    <link href="jsaulao.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Trabalhando com Números v2.0</h1>
+    <label>Informe o Nome do Aluno:</label>
+    <input type="text" class="nom" id="nome"><br>
+    <label>Informe a Primeira Nota:</label>
+    <input type="number" id="nota1"><br>
+    <label>Informe a Segunda Nota:</label>
+    <input type="number" id="nota2"><br>
+    <button onclick="start()">Clique Para Obter a Média</button>
+    <p id="media">A Média do Aluno "x" é: ...</p>
+</body>
+    <script>
+        function start(){
+            var alun = document.getElementById("nome").value;
+            var num1 = Number(document.getElementById("nota1").value);
+            var num2 = Number(document.getElementById("nota2").value);
+            document.getElementById("media").innerHTML = `A Média do Aluno "${alun}" é: ${(num1 + num2) / 2}`
+        }
+    </script>
+</html> 

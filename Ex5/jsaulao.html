@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+    <link href="jsaulao.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Trabalhando com Números v1.0</h1>
+    <button onclick="calc()">Clique aqui para Começar!</button>
+    <h1 id="result">Aqui vai o Resultado...</h1>
+</body>
+    <script>
+        function calc(){
+            let num1 = window.prompt('Qual o seu Primeiro Número?');
+            let num2 = window.prompt('Qual o seu Segundo Número?');
+            document.getElementById("result").innerHTML = `A soma dos seus Números é ${num1 + num2}<br> Bela Escolha de Número!👌`
+        }
+    </script>
+</html> 
